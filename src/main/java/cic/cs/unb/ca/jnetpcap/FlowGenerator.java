@@ -130,34 +130,6 @@ public class FlowGenerator {
     	}
     }
 
-    /*public void dumpFlowBasedFeatures(String path, String filename,String header){
-    	BasicFlow   flow;
-    	try {
-    		System.out.println("TOTAL Flows: "+(finishedFlows.size()+currentFlows.size()));
-    		FileOutputStream output = new FileOutputStream(new File(path+filename));    
-    		
-    		output.write((header+"\n").getBytes());
-    		Set<Integer> fkeys = finishedFlows.keySet();    		
-			for(Integer key:fkeys){
-	    		flow = finishedFlows.get(key);
-	    		if(flow.packetCount()>1)				
-	    			output.write((flow.dumpFlowBasedFeaturesEx()+"\n").getBytes());
-			}
-			Set<String> ckeys = currentFlows.keySet();   		
-			for(String key:ckeys){
-	    		flow = currentFlows.get(key);
-	    		if(flow.packetCount()>1)				
-	    			output.write((flow.dumpFlowBasedFeaturesEx()+"\n").getBytes());
-			}			
-			
-			output.flush();
-			output.close();			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-    }*/
-
     public int dumpLabeledFlowBasedFeatures(String path, String filename,String header){
     	BasicFlow   flow;
     	int         total = 0;

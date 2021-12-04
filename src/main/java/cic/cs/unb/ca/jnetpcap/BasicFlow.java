@@ -72,6 +72,7 @@ public class BasicFlow {
 		super();
 		this.initParameters();
 		this.isBidirectional = isBidirectional;
+//		this.firstPacket(packet);
 		this.firstPacket(packet);
 	}
 

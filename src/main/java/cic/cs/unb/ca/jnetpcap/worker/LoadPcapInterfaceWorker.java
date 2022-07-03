@@ -21,7 +21,6 @@ public class LoadPcapInterfaceWorker extends SwingWorker<List<PcapIf>,String>{
 
 	@Override
 	protected List<PcapIf> doInBackground() throws Exception {
-		
 		StringBuilder errbuf = new StringBuilder();
 		List<PcapIf> ifs = new ArrayList<>();
 		if(Pcap.findAllDevs(ifs, errbuf)!=Pcap.OK) {

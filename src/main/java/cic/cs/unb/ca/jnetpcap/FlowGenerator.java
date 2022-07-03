@@ -152,6 +152,7 @@ public class FlowGenerator {
     					// some error
     					// TODO: review what to do with the packet
     					logger.warn("Forward flow received {} FIN packets", flow.getFwdFINFlags());
+						logger.warn("Coba dapat data : " + flow.getProtocol());
     				}
     		    //
     			// Backward Flow

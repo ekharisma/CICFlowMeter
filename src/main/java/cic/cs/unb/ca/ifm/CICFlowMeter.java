@@ -105,10 +105,5 @@ public class CICFlowMeter {
 		}
 		logger.info("\n\n----------------------------------------------------------------------------\n TOTAL FLOWS GENERATED: {}",totalFlows);
 		logger.info("----------------------------------------------------------------------------\n");
-//		try {
-//			Files.write(Paths.get("src/main/resources/executionLog.log"),flowGen.dumpFlows().getBytes());
-//		} catch (IOException e) {			
-//			e.printStackTrace();
-//		}
 	}
 }

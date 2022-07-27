@@ -1,6 +1,7 @@
 package cic.cs.unb.ca.jnetpcap;
 
 import java.util.Arrays;
+import java.util.UUID;
 
 import org.jnetpcap.packet.format.FormatUtils;
 
